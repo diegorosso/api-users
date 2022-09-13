@@ -12,9 +12,6 @@ CORS(app)
 
 db = mongo.db.users #colección de usuarios
 
-@app.route('/block', methods=['GET'])
-def blockUser():
-    return "Hola"
 
 @app.route('/users', methods=['POST']) # Crear usuarios 
 def createUser():
